@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidDomInspection -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+
+    tools:context="com.example.miwok.MainActivity">
+
+
+    <TextView
+        android:id="@+id/numbers"
+        style="@style/Theme.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_orange_dark"
+        android:text="@string/Numbers"
+        />
+    <!--android:onClick="openNumbersList"-->
+
+    <TextView
+        android:id="@+id/family"
+        style="@style/Theme.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@android:color/holo_green_dark"
+        android:onClick="openFamilyList"
+        android:text="@string/family_members"
+        android:textColor="@android:color/white" />
+
+    <!--android:onClick="openFamilyList"-->
+
+    <TextView
+        android:id="@+id/colors"
+        style="@style/Theme.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:background="@color/colorPrimaryDark"
+        android:onClick="openColorsList"
+        android:text="@string/Colors"
+        android:textColor="@android:color/white" />
+    <!-- android:onClick="openColorsList"-->
+    <TextView
+        android:id="@+id/phrase"
+        style="@style/Theme.AppCompat.Light"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+
+        android:textColor="@android:color/white"
+        android:background="@android:color/holo_blue_light"
+        android:onClick="openPhraseList"
+        android:text="@string/Phrase" />
+    <!--android:onClick="openPhraseList"-->
+
+    <ListView
+        android:id="@+id/listview_flavor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <!--android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"-->
+</LinearLayout>
